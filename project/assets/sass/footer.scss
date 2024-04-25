@@ -1,0 +1,57 @@
+@import "variables.scss";
+/*стили для футера*/
+footer{
+  .footer__top {
+    margin-bottom: 74px;
+
+    img {
+      @media screen and (max-width: $test) {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .row {
+      @media screen and (max-width: $md) {
+        row-gap: 24px;
+        text-align: center;
+      }
+    }
+
+    .footer__links {
+      text-align: center;
+    
+      .footer__links-item-link {
+        font-size: 24px;
+        margin-bottom: 16px;
+        color: var(--dark);
+        @media screen and (max-width: $lg) {
+          margin-bottom: 0;
+          text-align: end;
+        }
+        @media screen and (max-width: $md) {
+          font-size: 21px;
+          text-align: center;
+        }
+      }
+    }
+  
+    .footer__info {
+      text-align: right;
+      @media screen and (max-width: $lg) {
+        text-align: center;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 7px;
+    @media screen and (max-width: $lg) {
+      text-align: center;
+    }
+  }
+}
+/*конец стили для футера*/

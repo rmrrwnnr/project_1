@@ -1,0 +1,106 @@
+@charset "UTF-8";
+:root {
+  --box-shadow: 0 0 35px rgba(12, 40, 54, 0.12);
+  --dark: #0C2836;
+  --sm: 576px;
+  --md: 768;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1400px;
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-lg: 960px;
+  --container-xl: 1140px;
+  --container-xxl: 1320px;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 1.5rem;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: var(--container-sm);
+  }
+}
+@media (min-width: 768px) {
+  .container, .container-md, .container-sm {
+    max-width: var(--container-md);
+  }
+}
+@media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm {
+    max-width: var(--container-lg);
+  }
+}
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: var(--container-xl);
+  }
+}
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: var(--container-xxl);
+  }
+}
+/*стили для футера*/
+footer .footer__top {
+  margin-bottom: 74px;
+}
+@media screen and (max-width: 992px) {
+  footer .footer__top img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footer__top .row {
+    row-gap: 24px;
+    text-align: center;
+  }
+}
+footer .footer__top .footer__links {
+  text-align: center;
+}
+footer .footer__top .footer__links .footer__links-item-link {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: var(--dark);
+}
+@media screen and (max-width: 992px) {
+  footer .footer__top .footer__links .footer__links-item-link {
+    margin-bottom: 0;
+    text-align: end;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .footer__top .footer__links .footer__links-item-link {
+    font-size: 21px;
+    text-align: center;
+  }
+}
+footer .footer__top .footer__info {
+  text-align: right;
+}
+@media screen and (max-width: 992px) {
+  footer .footer__top .footer__info {
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+footer .footer__copyright {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+@media screen and (max-width: 992px) {
+  footer .footer__copyright {
+    text-align: center;
+  }
+}
+
+/*конец стили для футера*//*# sourceMappingURL=footer.css.map */

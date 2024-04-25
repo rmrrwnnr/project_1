@@ -1,0 +1,88 @@
+@import "variables.scss";
+/*стили для блока с веб приложениями*/
+.web-items{
+  display: flex;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: $sm) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #web{
+    @media screen and (max-width: $sm) {
+      text-align: -webkit-center;
+    }
+  }
+  
+  .web__list{
+    li {
+      color: #0C2836;
+      font-size: 32px;
+      line-height: 38.4px;
+      text-align: right;
+      margin-right: 42px;
+      padding-top: 24px;
+      @media screen and (max-width: $lg) {
+        line-height: 30.4px;
+      }
+      @media screen and (max-width: $md) {
+        font-size: 25px;
+        margin-right: 20px;
+      }
+      @media screen and (max-width: $sm) {
+        line-height: 0;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+    span {
+      color: #FFA239;
+    }
+  }
+  
+
+  .web__card {
+    width: fit-content;
+    border-radius: 40px;
+    background: #fff;
+    box-shadow: 0 0 35px 2px rgba(12, 40, 54, 0.12);
+    @media screen and (max-width: $sm) {
+      margin-top: 30px;
+    }
+
+    .webpic {
+      padding: 40px 386px 25px 40px;
+      @media screen and (max-width: $lg) {
+        padding-right: 255px;
+        padding-bottom: 12px; 
+      }
+      @media screen and (max-width: $md) {
+        padding-right: 192px;
+        // align-items: center;
+      }
+      @media screen and (max-width: $sm) {
+        padding: 10px 0 0;
+      }
+    }
+    
+    .web__card-name {
+      color: #0C2836;
+      font-size: 18px;
+      padding-bottom: 67px;
+      padding-left: 40px;
+      @media screen and (max-width: $lg) {
+        padding-bottom: 33px;
+      }
+      @media screen and (max-width: $md) {
+        font-size: 16px;
+        width: min-content;
+      }
+      @media screen and (max-width: $sm) {
+        padding: 15px 20px;
+      }
+    }
+  }
+} 

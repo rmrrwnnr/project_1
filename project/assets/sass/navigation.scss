@@ -1,0 +1,8 @@
+@import "variables.scss";
+.navigation {
+  padding-top: 35px;  
+  margin-bottom: 72px;
+  @media screen and (max-width: $sm) {
+    padding-top: 10px;
+  }
+}
